@@ -14,8 +14,6 @@ Nanotechnology is the science, engineering, and application of materials and dev
 
 ## 📋 Prerequisites
 
-Before diving into nanotechnology, you should have foundational knowledge in:
-
 - **Chemistry**: atomic structure, bonding, thermodynamics, kinetics
 - **Physics**: mechanics, electromagnetism, quantum mechanics basics
 - **Mathematics**: calculus, linear algebra, differential equations
