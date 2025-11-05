@@ -2,9 +2,6 @@
 
 A comprehensive, structured learning path that combines **chemistry, physics, materials science, and biology** to understand and engineer matter at the **nanoscale** (1–100 nm). This guide takes you from fundamental concepts to cutting-edge applications in nanoelectronics, nanomedicine, and quantum devices.
 
-## 🎯 What is Nanotechnology?
-
-Nanotechnology is the science, engineering, and application of materials and devices at the **nanometer scale** (1–100 nm) — where unique physical, chemical, and biological properties emerge that differ dramatically from bulk materials.
 
 **Why Nanoscale Matters:**
 - Surface-to-volume ratio dramatically increases
