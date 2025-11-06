@@ -1,8 +1,5 @@
 # Nanotechnology Foundations
 
-A comprehensive, structured learning path that combines **chemistry, physics, materials science, and biology** to understand and engineer matter at the **nanoscale** (1–100 nm). This guide takes you from fundamental concepts to cutting-edge applications in nanoelectronics, nanomedicine, and quantum devices.
-
-
 **Why Nanoscale Matters:**
 - Surface-to-volume ratio dramatically increases
 - Quantum mechanical effects become dominant
