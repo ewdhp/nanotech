@@ -263,8 +263,9 @@ wavelengths_min = [item[2] for item in em_spectrum]
 labels = [item[0] for item in em_spectrum]
 
 # Create horizontal bar chart
+cmap = plt.cm.get_cmap('viridis')
 for i, (label, wl_max, wl_min) in enumerate(em_spectrum):
-    color = plt.cm.viridis(i / len(em_spectrum))
+    color = cmap(i / len(em_spectrum))
     ax3.barh(i, np.log10(wl_max) - np.log10(wl_min), 
             left=np.log10(wl_min), height=0.8, color=color, alpha=0.7)
 
