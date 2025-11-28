@@ -358,49 +358,64 @@ def visualize_lorentz_force():
     print("GENERATING 3D VISUALIZATION")
     print("=" * 70)
     
-    # Setup with stronger fields for better visualization
+    # Setup with fields that create distinct, visible vectors
+    # Configure so all 6 vectors point in different directions
     q = 1.602e-19  # Positive charge
-    E = np.array([1000, 0, 0])  # V/m
-    v = np.array([0, 1e6, 0])  # m/s
-    B = np.array([0, 0, 0.5])  # Tesla
+    E = np.array([500, 300, 0])  # V/m - in XY plane
+    v = np.array([1e6, 0, 5e5])  # m/s - in XZ plane
+    B = np.array([0, 0.3, 0.2])  # Tesla - in YZ plane
     
     F_total, F_E, F_B = lorentz_force(q, E, v, B)
     
+    print(f"\nVector directions:")
+    print(f"E     = [{E[0]:8.1f}, {E[1]:8.1f}, {E[2]:8.1f}] V/m")
+    print(f"v     = [{v[0]:8.1e}, {v[1]:8.1e}, {v[2]:8.1e}] m/s")
+    print(f"B     = [{B[0]:8.1f}, {B[1]:8.1f}, {B[2]:8.1f}] T")
+    print(f"F_E   = [{F_E[0]:8.2e}, {F_E[1]:8.2e}, {F_E[2]:8.2e}] N")
+    print(f"F_B   = [{F_B[0]:8.2e}, {F_B[1]:8.2e}, {F_B[2]:8.2e}] N")
+    print(f"F_tot = [{F_total[0]:8.2e}, {F_total[1]:8.2e}, {F_total[2]:8.2e}] N")
+    
     # Scale all vectors to similar magnitudes for visualization
-    # Use logarithmic scaling for forces to better visualize
     scale = 1.5
     E_viz = E / np.linalg.norm(E) * scale
     v_viz = v / np.linalg.norm(v) * scale
     B_viz = B / np.linalg.norm(B) * scale
     
-    # Scale forces uniformly
+    # Scale forces
     F_E_viz = F_E / np.linalg.norm(F_E) * scale if np.linalg.norm(F_E) > 0 else np.array([0, 0, 0])
     F_B_viz = F_B / np.linalg.norm(F_B) * scale if np.linalg.norm(F_B) > 0 else np.array([0, 0, 0])
     F_viz = F_total / np.linalg.norm(F_total) * scale if np.linalg.norm(F_total) > 0 else np.array([0, 0, 0])
     
-    fig = plt.figure(figsize=(14, 10))
+    fig = plt.figure(figsize=(16, 12))
     ax = fig.add_subplot(111, projection='3d')
     
     origin = np.array([0, 0, 0])
     
-    # Plot field vectors
+    # Plot field vectors from origin (thinner lines)
     ax.quiver(0, 0, 0, E_viz[0], E_viz[1], E_viz[2], 
-              color='blue', arrow_length_ratio=0.15, linewidth=3, label='E field (V/m)', alpha=0.9)
+              color='blue', arrow_length_ratio=0.15, linewidth=3, label='E field (input)', 
+              alpha=0.7)
     ax.quiver(0, 0, 0, v_viz[0], v_viz[1], v_viz[2], 
-              color='green', arrow_length_ratio=0.15, linewidth=3, label='velocity v (m/s)', alpha=0.9)
+              color='green', arrow_length_ratio=0.15, linewidth=3, label='velocity v (input)', 
+              alpha=0.7)
     ax.quiver(0, 0, 0, B_viz[0], B_viz[1], B_viz[2], 
-              color='purple', arrow_length_ratio=0.15, linewidth=3, label='B field (T)', alpha=0.9)
+              color='purple', arrow_length_ratio=0.15, linewidth=3, label='B field (input)', 
+              alpha=0.7)
     
-    # Plot force vectors
+    # Plot force vectors from origin (thicker lines, brighter colors)
     ax.quiver(0, 0, 0, F_E_viz[0], F_E_viz[1], F_E_viz[2], 
-              color='cyan', arrow_length_ratio=0.15, linewidth=3.5, label='F_E = qE', alpha=0.9)
+              color='cyan', arrow_length_ratio=0.2, linewidth=5, label='F_E = qE (output)', 
+              alpha=1.0)
     ax.quiver(0, 0, 0, F_B_viz[0], F_B_viz[1], F_B_viz[2], 
-              color='orange', arrow_length_ratio=0.15, linewidth=3.5, label='F_B = q(v×B)', alpha=0.9)
+              color='orange', arrow_length_ratio=0.2, linewidth=5, label='F_B = q(v×B) (output)', 
+              alpha=1.0)
     ax.quiver(0, 0, 0, F_viz[0], F_viz[1], F_viz[2], 
-              color='red', arrow_length_ratio=0.15, linewidth=4, label='F_total', alpha=1.0)
+              color='red', arrow_length_ratio=0.2, linewidth=6, label='F_total (output)', 
+              alpha=1.0)
     
     # Plot particle
-    ax.scatter([0], [0], [0], color='black', s=150, label='Particle (q>0)', zorder=10)
+    ax.scatter([0], [0], [0], color='gold', s=300, marker='o', 
+               label='Particle (q>0)', zorder=10, edgecolors='black', linewidths=3)
     
     # Labels and formatting
     ax.set_xlabel('X', fontsize=12, fontweight='bold')
