@@ -84,27 +84,27 @@
 
 #### 1.4 Basics of Quantum Mechanics for Nanotech
 
-- **Wave–particle duality**:
-  - De Broglie wavelength: λ = h/p
-  - Photons and matter waves
-- **Heisenberg uncertainty principle**: ΔxΔp ≥ ℏ/2
+- **Wave–particle duality** → 2.2, 4.1, 4.2, 5.1, 5.3
+  - De Broglie wavelength: λ = h/p → 2.2, 4.1, 4.2, 5.1, 5.3
+  - Photons and matter waves → 2.2, 4.2, 5.1, 5.4
+- **Heisenberg uncertainty principle**: ΔxΔp ≥ ℏ/2 → 2.2, 4.1, 5.1, 5.3
 - **Energy quantization**:
-  - Particle in a box model
-  - Discrete energy levels
+  - Particle in a box model → 2.2, 4.1, 4.2, 5.1, 5.3
+  - Discrete energy levels → 2.2, 4.1, 4.2, 5.1, 5.3, 5.5
 - **Schrödinger equation** (conceptual understanding):
-  - Time-independent form: Ĥψ = Eψ
-  - Wavefunctions and probability densities
+  - Time-independent form: Ĥψ = Eψ → 2.2, 3.3, 4.1, 4.2, 5.1, 5.3
+  - Wavefunctions and probability densities → 2.2, 3.3, 4.1, 4.2, 5.1, 5.3
 - **Quantum confinement effects**:
-  - 3D confinement: quantum dots
-  - 2D confinement: quantum wells
-  - 1D confinement: quantum wires
+  - 3D confinement: quantum dots → 2.2, 3.3, 4.1, 4.2, 4.4, 5.1, 5.3, 5.5
+  - 2D confinement: quantum wells → 2.2, 3.3, 4.1, 4.2, 5.1, 5.3, 5.5
+  - 1D confinement: quantum wires → 2.2, 3.3, 4.1, 4.2, 5.1, 5.3, 5.5
 - **Size-dependent properties**:
-  - Blue-shift in absorption with decreasing size
-  - Discrete electronic states
+  - Blue-shift in absorption with decreasing size → 2.2, 4.2, 4.4, 5.1, 5.3, 5.5
+  - Discrete electronic states → 2.2, 4.1, 4.2, 5.1, 5.3, 5.5
 - **Band structure basics**:
-  - Valence and conduction bands
-  - Band gaps in semiconductors
-  - Density of states at nanoscale
+  - Valence and conduction bands → 2.2, 3.3, 4.1, 4.2, 4.4, 5.1, 5.3, 5.5
+  - Band gaps in semiconductors → 2.2, 3.3, 4.1, 4.2, 4.4, 5.1, 5.3, 5.5
+  - Density of states at nanoscale → 2.2, 3.3, 4.1, 4.2, 4.4, 5.1, 5.3, 5.5
 
 **Applications**: Understanding quantum dots, nanowire electronics, photonic devices
 
