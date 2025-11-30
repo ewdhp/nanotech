@@ -110,6 +110,45 @@
 
 ---
 
+### Tensor Field Demo (Stress Around a Nanoparticle)
+
+A small Python script under this directory illustrates tensor fields (stress tensor field) with a nanotech example.
+
+Run it from the `nanotech` directory; your virtual environment should auto-activate:
+
+```bash
+cd /home/ewd/github/ewdhp/nanotech
+python tensor_field_nanotech.py
+```
+
+It should:
+
+- Print sample stress tensors and invariants, e.g.:
+
+```text
+=== Sample stress tensor field evaluations ===
+Nanoparticle radius R = 1.000e-08 m, base σ0 = 1.00 (arb. units)
+
+Point 'far_field': (x,y,z) = (0.000e+00, 0.000e+00, 5.000e-08)
+  σ (stress tensor) =
+   [[0.    0.    0.   ]
+    [0.    0.    0.   ]
+    [0.    0.    1.xxx]]
+  trace(σ)        = 1.xxx
+  von Mises σ_vm  = 0.xxx
+...
+```
+
+- Open a Matplotlib window with a 2D x–z slice of von Mises stress around the spherical nanoparticle.
+
+If you see import errors, install dependencies in the venv:
+
+```bash
+pip install numpy matplotlib
+```
+
+---
+
 ### **Phase 2: Nanoscale Materials and Properties**
 
 **Goal**: Learn how matter behaves differently at the nanoscale and methods to characterize these unique properties.

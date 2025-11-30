@@ -47,7 +47,7 @@ def de_broglie_wavelength(momentum):
 def photon_wavelength(energy):
     """
     Calculate photon wavelength from energy: λ = hc/E
-    
+    d
     Parameters:
     -----------
     energy : float
