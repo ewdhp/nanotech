@@ -1,4 +1,6 @@
 import numpy as np
+import matplotlib
+matplotlib.use('TkAgg')  # Use TkInter GUI backend
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
@@ -142,8 +144,10 @@ ax3.legend(fontsize=10)
 ax3.set_xlim(0, 3.2)
 
 plt.tight_layout()
-plt.show()
-
+output_file = '/home/ewd/nanotech/inverse_square_law_plot.png'
+plt.savefig(output_file, dpi=300, bbox_inches='tight')
 print("\n" + "=" * 60)
-print("Visualization complete!")
+print(f"Visualization saved to: {output_file}")
+print("Displaying plot window...")
 print("=" * 60)
+plt.show()
