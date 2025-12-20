@@ -1,27 +1,5 @@
 # Nanotechnology Foundations
 
-**Why Nanoscale Matters:**
-- Surface-to-volume ratio dramatically increases
-- Quantum mechanical effects become dominant
-- Properties can be tuned by controlling size and shape
-- New phenomena emerge: quantum confinement, plasmon resonance, superparamagnetism
-
-## 📋 Prerequisites
-
-- **Chemistry**: atomic structure, bonding, thermodynamics, kinetics
-- **Physics**: mechanics, electromagnetism, quantum mechanics basics
-- **Mathematics**: calculus, linear algebra, differential equations
-- **Materials Science**: crystal structures, phase diagrams (helpful but not required)
-
-**Recommended Background:**
-- Complete the [Chemistry Foundations](../chemistry/README.md) curriculum
-- Basic understanding of solid-state physics
-- Familiarity with scientific programming (Python recommended)
-
----
-
-## 🧬 Learning Path
-
 ### **Phase 1: Foundations of Nanoscience**
 
 **Goal**: Understand what "nano" means, how nanoscale behavior differs from bulk matter, and the interdisciplinary connections.
