@@ -4,6 +4,9 @@ ac_dc_demo.py
 A simple script to demonstrate the difference between AC (Alternating Current) and DC (Direct Current).
 Plots both waveforms for visualization.
 """
+
+import matplotlib
+matplotlib.use('TkAgg')
 import numpy as np
 import matplotlib.pyplot as plt
 
