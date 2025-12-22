@@ -1,9 +1,5 @@
 # Nanotechnology Foundations
 
-### **Phase 1: Foundations of Nanoscience**
-
-**Goal**: Understand what "nano" means, how nanoscale behavior differs from bulk matter, and the interdisciplinary connections.
-
 #### 1.1 Introduction to Nanotechnology
 
 - **What is nanotechnology?** Definition and scope
