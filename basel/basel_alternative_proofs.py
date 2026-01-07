@@ -42,6 +42,7 @@ import seaborn as sns
 from scipy.integrate import dblquad, quad
 from scipy.special import bernoulli
 import cmath
+import math
 
 sns.set_style("whitegrid")
 plt.rcParams['figure.figsize'] = (16, 12)
@@ -256,7 +257,7 @@ def bernoulli_numbers_proof():
         k = 2*n
         B_2n = bernoulli(k)[-1] if k < 20 else 0
         if abs(B_2n) > 1e-10:
-            zeta_k = abs((-1)**(n+1) * (2*np.pi)**(k) * B_2n / (2 * np.math.factorial(k)))
+            zeta_k = abs((-1)**(n+1) * (2*np.pi)**(k) * B_2n / (2 * math.factorial(k)))
             print(f"  ζ({k}) = {zeta_k:.10f}")
 
 
@@ -414,7 +415,7 @@ def create_comparison_visualization():
         B_k = bernoulli(k)[-1] if k < 20 else 0
         n = k//2
         if abs(B_k) > 1e-10:
-            zeta_k = abs((-1)**(n+1) * (2*np.pi)**(k) * B_k / (2 * np.math.factorial(k)))
+            zeta_k = abs((-1)**(n+1) * (2*np.pi)**(k) * B_k / (2 * math.factorial(k)))
             zeta_vals.append(zeta_k)
         else:
             zeta_vals.append(0)
