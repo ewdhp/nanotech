@@ -5,7 +5,8 @@
 
 ### File: `parseval_basel_proof.py`
 
-A complete demonstration showing how to prove that ∑(1/n²) = π²/6 using Fourier series and Parseval's identity.
+A complete demonstration showing how to prove that 
+∑(1/n²) = π²/6 using Fourier series and Parseval's identity.
 
 ### Mathematical Approach
 
