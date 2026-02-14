@@ -14,7 +14,9 @@
 
 #Color Appearance Models & Accessibility
 #Study models like CIECAM02 for context-aware color prediction, 
-# advanced color difference formulas (CIEDE2000), and accessibility 
+# advanced color difference formulas (CIEDE2000), and access
+# 
+# ibility 
 # standards (WCAG contrast, color blindness simulation).
 
 # Key scientists:
@@ -26,7 +28,8 @@
 # - W. David Wright & John Guild: CIE color matching (1920s-1931)
 #
 # Modern color theory & algorithms:
-# - CIE color spaces (CIE XYZ, CIE Lab, CIE Luv) for perceptual uniformity and device independence
+# - CIE color spaces (CIE XYZ, CIE Lab, CIE Luv) for perceptual 
+# uniformity and device independence
 # - sRGB and linear RGB for digital imaging and displays
 # - Color appearance models (CIECAM02, CAM16) for context-aware color prediction
 # - Advanced color difference formulas (CIEDE2000)
@@ -36,10 +39,12 @@
 #
 #
 # Theory (short):
-# - Additive color (RGB): light mixes by adding channels; black is (0,0,0) and white is (255,255,255).
+# - Additive color (RGB): light mixes by adding channels; black is (0,0,0) 
+# and white is (255,255,255).
 # - Hue is the angle on a color wheel; saturation is colorfulness; value is brightness.
 # - Complementary colors are 180 deg apart on the hue wheel; triadic colors are 120 deg apart.
-# - Linear interpolation models additive mixing; perceptual brightness is approximated by relative luminance.
+# - Linear interpolation models additive mixing; perceptual brightness is 
+# approximated by relative luminance.
 # - Contrast ratio compares luminance to estimate readability between two colors.
 from typing import Tuple
 
