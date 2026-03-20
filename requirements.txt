@@ -1,0 +1,12 @@
+numpy
+matplotlib
+seaborn
+scipy
+pandas
+plotly
+sympy
+mpmath
+
+# SageMath (sagemath/ directory) requires a separate installation.
+# See sagemath/README.md or https://www.sagemath.org/download.html
+# It is NOT installable via pip on all platforms.
